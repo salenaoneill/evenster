@@ -8,7 +8,7 @@ var cityInput = document.getElementById('search');
 searchBtn.addEventListener('click', function(){
     var city = cityInput.value;
     console.log(city);
-})
+});
 
 
 fetch(requestUrl)
@@ -19,3 +19,11 @@ fetch(requestUrl)
 .then(function (data) {
     console.log(data)
   });
+
+
+  // fetch('requestUrl')
+// .then((response) => {
+// response.json().then((data) => {
+// console.log(data);
+// });
+// });
