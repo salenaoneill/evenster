@@ -9,6 +9,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
     />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   </head>
 
   <body>
@@ -20,11 +21,15 @@
       <div class="search">
         Search a City <input type="text" id="search" />
         <button id="city-searchBtn">🔎</button>
-        <h2 class="'city">City Events</h2>
-        <div class="Events">
+        <section>
+            <h2 class="'city">City Events</h2>
+            <div id="Events">
           <!-- <img src="" alt="" class="icon" /> -->
           <!-- <div class="description">City</div> -->
-        </div>
+            </div>
+            <div id="Dates"></div>
+        </section>
+        
       </div>
     </div>
 
