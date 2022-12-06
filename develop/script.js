@@ -22,15 +22,15 @@ function getEvents(city){
             $("#Dates").text(eventDate);
         } 
     })
-    var weatherUrl = "https://api.openweathermap.org/data/2.5/forecast?q=" + city + "&appid=" + weatherApiKey;
+    var weatherUrl = "https://api.openweathermap.org/data/2.5/forecast?units=imperial&q=" + city + "&appid=" + weatherApiKey;
     $.ajax({
         type: 'GET',
         url: weatherUrl, 
         dataType: 'json',
         success: function(response) {
             console.log(weatherUrl);
-            console.log(response);
-            
+            console.log(response.list[0].main.temp);
+            $("#Weather").text(response.list[0].main.temp);
         } 
     })
 }
