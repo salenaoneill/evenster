@@ -2,7 +2,7 @@ var ticketApiKey = "dJqLwkzfmRboei4GB7DDkGUtn5uG2Nk4";
 var searchBtn = document.getElementById('city-searchBtn');
 var cityInput = document.getElementById('search');
 var weatherApiKey = "2990125db773c56e5007a1ee037a364b";
-
+var image = document.getElementById("icon");
 searchBtn.addEventListener('click', function(){
     var city = cityInput.value;
     getEvents(city);
@@ -18,8 +18,11 @@ function getEvents(city){
             console.log(response);
             var eventName = response._embedded.events[0].name;
             var eventDate = response._embedded.events[0].dates.start.localDate;
+            var imageUrl = response._embedded.events[0].images[0].url
             $("#Events").text(eventName);
             $("#Dates").text(eventDate);
+            image.src = imageUrl
+            console.log(image);
         } 
     })
     var weatherUrl = "https://api.openweathermap.org/data/2.5/forecast?q=" + city + "&appid=" + weatherApiKey;
