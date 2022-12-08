@@ -41,15 +41,23 @@ function getEventsWithWeather(city){
                     //creates a list item for each event matching the criteria
                     for (i = 0; i < sortedEvents.length; i++) {
                         var newEvent = document.createElement("li");
+                        var eventWeather = document.createElement("li");
+                        var weatherIcon = document.createElement("img");
                         //retrieves forecast for date of event
                         var matchingWeatherEl = weatherResponse.list.find(function(c){
                             return c.dt_txt.startsWith(sortedEvents[i].dates.start.localDate);
                         });
+                        var icon_name = matchingWeatherEl.weather[0].icon;
+                        var imageURL = "https://openweathermap.org/img/wn/" + icon_name + ".png";
                         var temp = matchingWeatherEl.main.temp;
                         var weatherDescription = matchingWeatherEl.weather[0].description;
                         //displays date of event, followed by event, temp that day, and weather description that day.
-                        newEvent.innerHTML = sortedEvents[i].dates.start.localDate + ": " + sortedEvents[i].name + " " + temp + "°F " + "w/ " + weatherDescription;
+                        newEvent.innerHTML = sortedEvents[i].dates.start.localDate + ": " + sortedEvents[i].name;
+                        eventWeather.innerHTML = temp + "°F " + "w/ " + weatherDescription;
+                        $(weatherIcon).attr("src", imageURL);
                         $("#Events").append(newEvent);
+                        $("#Events").append(eventWeather);
+                        $("#Events").append(weatherIcon);
                     }
                     
                 } 
