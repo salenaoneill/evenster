@@ -18,7 +18,7 @@ There are no steps required for installation. The users open the webpage on A we
 
 ## Usage
 The user is able to open this with any web browser of their choice. Once they open it they will be presented with a search bar at the top of the page.
-![initial page](./Images/home-page.jpg.jpg)
+![initial page](./Images/home-page.jpg)
 Once on the home page the use is able to input a city of their choosing: 
 ![city search](./Images/search-Bar.jpg)
 when they search the user will get a list of events in that city alongside the weather.
