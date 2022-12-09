@@ -52,3 +52,16 @@ h2{
     font-weight: bold;
     text-align: center;
 }
+.ticketimg{
+    width: 60px;
+    float: right;
+    transition: 3s;
+    max-height: 100px;
+    
+}
+.ticketimg:hover{
+   width: 180px;
+   zoom: 1;
+   max-height: 100px;
+  border-radius: 20px;
+}
