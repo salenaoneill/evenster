@@ -1,3 +1,29 @@
-
 body {
-
+    <<<<<<< feature/htmlsetup
+        background: url('https://afar.brightspotcdn.com/dims4/default/60881c1/2147483647/strip/true/crop/640x320+0+40/resize/1440x720!/quality/90/?url=https%3A%2F%2Fafar-media-production-web.s3.amazonaws.com%2Fbrightspot%2F32%2Fbc%2Fe9c63904944e240bebe148b4ba8b%2Foriginal-4976508500-ba70c880c6-z.jpg')
+       
+      }
+      
+      
+      .city{
+        border-radius: 5px;
+        font-style: bold;
+        color: black;
+        width: 60%;
+      }
+      
+    
+    .ticketimg{
+        width: 60px;
+        float: right;
+        transition: 3s;
+        max-height: 100px;
+        
+    }
+    .ticketimg:hover{
+       width: 180px;
+       zoom: 1;
+       max-height: 100px;
+      border-radius: 20px;
+    }
+  
