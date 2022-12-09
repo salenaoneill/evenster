@@ -26,8 +26,10 @@ body {
       border-radius: 20px;
     }
   
+
     .box {
       position: relative;
       width: 50%;
       left: 35%;
     }
+
