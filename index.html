@@ -13,26 +13,47 @@
   </head>
 
   <body>
-    <div class="header">
-      <h1>Eventster</h1>
-    </div>
-
-    <div class="card">
-      <div class="search">
-        Search a City <input type="text" id="search" />
-        <button id="city-searchBtn">🔎</button>
-        <section>
-            <h2 class="city">City Events For The Next 7 Days</h2>
-            <ul id="Events">
-          <!-- <img src="" alt="" class="icon" /> -->
-          <!-- <div class="description">City</div> -->
-            </ul>
-            <div id="Dates"></div>
-            <div id="Weather"></div>
-        </section>
-        
+    <section class="hero has-background">
+      <div class="hero-body">
+        <p class="title">Eventser</p>
+        <p class="subtitle"></p>
       </div>
-    </div>
+    </section>
+
+    <!--remove is danger and add background on css to display city image-->
+
+    <section class="hero is-fullheight">
+      <div class="hero-body">
+        <p class="title"></p>
+        <!--added a box to end the night-->
+        <div class="box">
+          <div class="media-left"></div>
+        <p class="search">
+          Search a City<input type="text" id="search" />
+          <button id="city-searchBtn">🔎</button>
+        </p>
+        <section>
+          <h2 class="city">City Events For the next 7 days</h2>
+          <ul id="Events"></ul>
+          <div id="Dates"></div>
+          <div id="Weather"></div>
+        </section>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          <strong>Eventster</strong> by <a>Dylan Quaale,
+            Salena Oneill, Lilia Ungurean, Abduljabar Nur
+          </a>. The source code is licensed
+          <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+          is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+        </p>
+      </div>
+    </footer>
+  
+
 
     <script
       src="https://code.jquery.com/jquery-3.5.1.min.js"
