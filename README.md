@@ -28,7 +28,7 @@ The user will also be able to hover over the image on the side and the image wil
 
 ## License 
 
-MIT License
+MIT License xx
 
 ## Deplyed-Link
 
